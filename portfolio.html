@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/portfolio.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+		<script>document.documentElement.classList.add("js")</script>
 	</head>
 	<body>
 
@@ -35,15 +36,37 @@
 			</div>
 		</section>
 
-		<section class="container">
+		<section class="container" data-slide= "porti">
 			<blockquote class="quote_clientes">
-				<p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
-				<cite>Barbara Moss</cite>
+				<p>“A arte desafia a tecnologia, e a tecnologia inspira a arte”.</p>
+				<cite> John Lasseter</cite>
+			</blockquote>
+
+			<blockquote class="quote_clientes">
+				<p>“Só por que alguma coisa não faz o que você planejou que ela fizesse não quer dizer que ela seja inútil”.</p>
+				<cite> Thomas Edison</cite>
+			</blockquote>
+
+			<blockquote class="quote_clientes">
+				<p>“Qualquer tecnologia suficientemente avançada é equivalente à mágica”.</p>
+				<cite>Arthur C. Clarke</cite>
 			</blockquote>
 		</section>
 
 		<section class="portfolio">
-			<div class="container">
+			<div class="container" data-slide="portii">
+				<ul class="portfolio_lista">
+					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
+					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+					<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+				</ul>
+
+				<ul class="portfolio_lista">
+					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
+					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+					<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+				</ul>
+
 				<ul class="portfolio_lista">
 					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
 					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
@@ -95,6 +118,9 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="js/dist/simple-slide.js"></script>
+		<script src="js/index.js"></script>
 
 	</body>
 </html>
