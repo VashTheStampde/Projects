@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My Style -->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        
+    </style>
+    <title>Item</title>
+</head>
+<body>
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="/img/jordan-2.svg" alt="logo">
+            <i class='bx bx-shopping-bag'></i>
+        </div>
+        <div class="main-images">
+            <img id ="black" class="black active" src="img/modelo1.jpg" alt="tenis-modelo-1">
+            <img id ="red" class="red" src="img/modelo2.jpg" alt="tenis-modelo-2">
+            <img id ="pink" class="pink" src="img/modelo3.jpg" alt="tenis-modelo-3">
+        </div>
+        <div class="shoe-details">
+            <span class="shoe_name">JORDAN ONE</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, doloribus necessitatibus!</p>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Color:</span>
+                <div class="circles">
+                    <span class="circle black active " id="black"></span>
+                    <span class="circle red" id="red"></span>
+                    <span class="circle pink" id="pink"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">$500.00</span>
+                <span class="price_letter">Five hundred dollars only</span>
+            </div>
+        </div>
+        <div class="button">
+            <button>Add to cart</button>
+        </div>
+    </div>
+
+    <script>
+        let circle = document.querySelector(".color-option");
+        circle.addEventListener("click", (e)=>{
+            let target = e.target;
+            if(target.classList.contains("circle")){
+                circle.querySelector(".active").classList.remove("active");
+                target.classList.add("active");
+                document.querySelector(".main-images .active").classList.remove("active");
+                document.querySelector(`.main-images .${target.id}`).classList.add("active");
+            }
+            console.log(target);
+            
+        });
+    </script>
+</body>
+</html>
